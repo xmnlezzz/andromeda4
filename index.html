@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#080f29" />
+  <meta name="description" content="Andrómeda 4 — misión de lanzamiento. Un equipo, una trayectoria, un lanzamiento espectacular." />
+  <title>Andrómeda 4 | Misión de lanzamiento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Orbitron:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="grid" aria-hidden="true"></div>
+  <div class="disco-rays" aria-hidden="true"></div>
+  <div class="disco-orb" aria-hidden="true"></div>
+  <div class="shooting-stars" aria-hidden="true">
+    <i class="shooting-star star-a"></i><i class="shooting-star star-b"></i><i class="shooting-star star-c"></i>
+    <i class="shooting-star star-d"></i><i class="shooting-star star-e"></i>
+  </div>
+  <div class="launch-sequence" aria-hidden="true">
+    <div class="launch-rocket"><img src="logo-principal.jpeg" alt="" /><span class="rocket-star">★</span></div>
+    <span class="gold-trail"></span>
+  </div>
+  <div class="orbit orbit-one" aria-hidden="true"></div>
+  <div class="orbit orbit-two" aria-hidden="true"></div>
+
+  <main>
+    <nav class="topbar" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Andrómeda 4, inicio">
+        <img src="logo-principal.jpeg" alt="" />
+        <span>ANDRÓMEDA <b>4</b></span>
+      </a>
+      <div class="nav-status"><i></i> SISTEMA ACTIVO <span>/</span> MISIÓN 04</div>
+      <a class="nav-link" href="#mision">VER MISIÓN <span>↗</span></a>
+    </nav>
+
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span>01</span> PROTOCOLO DE LANZAMIENTO · ANDRÓMEDA 4</p>
+        <h1>Donde termina<br><em>el cielo,</em><br>comienza nuestra misión.</h1>
+        <p class="hero-text">Una idea se convierte en trayectoria. Un equipo se convierte en impulso. Estamos construyendo el lanzamiento que nos llevará más lejos.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#cuenta-regresiva">INICIAR CUENTA REGRESIVA <span>→</span></a>
+          <button class="sound-toggle" id="soundToggle" type="button" aria-pressed="false"><span class="sound-icon">◉</span> ACTIVAR AUDIO</button>
+        </div>
+      </div>
+      <div class="hero-emblem" aria-label="Logo de Andrómeda 4">
+        <div class="emblem-glow"></div>
+        <img src="logo-principal.jpeg" alt="Logo circular de Andrómeda 4" />
+        <span class="emblem-orbit"></span>
+        <div class="coordinates">24°48′N<br>107°23′W</div>
+      </div>
+      <div class="scroll-cue"><span></span> DESPLAZA PARA EXPLORAR</div>
+    </section>
+
+    <section class="countdown-section" id="cuenta-regresiva">
+      <div class="section-heading">
+        <p class="eyebrow"><span>02</span> TIEMPO HASTA EL DESPEGUE</p>
+        <h2>El momento se acerca.</h2>
+      </div>
+      <div class="countdown-panel">
+        <div class="panel-top"><span>VENTANA DE LANZAMIENTO</span><strong>30 NOV 2026 · 23:59:59</strong><span class="live"><i></i> LIVE</span></div>
+        <div class="timer" id="timer" aria-live="polite">
+          <div class="time-unit"><strong id="days">000</strong><span>DÍAS</span></div><b class="colon">:</b>
+          <div class="time-unit"><strong id="hours">00</strong><span>HORAS</span></div><b class="colon">:</b>
+          <div class="time-unit"><strong id="minutes">00</strong><span>MINUTOS</span></div><b class="colon">:</b>
+          <div class="time-unit"><strong id="seconds">00</strong><span>SEGUNDOS</span></div>
+        </div>
+        <div class="progress-line"><span id="progress"></span></div>
+        <div class="panel-bottom"><span>SECUENCIA DE IGNICIÓN: <b id="sequence">EN ESPERA</b></span><span>TIEMPO LOCAL · SINALOA, MX</span></div>
+      </div>
+      <p class="countdown-note" id="countdownNote">Activa el audio para escuchar la señal sonora de la cuenta regresiva.</p>
+    </section>
+
+    <section class="mission" id="mision">
+      <div class="mission-visual">
+        <div class="visual-label">TRAYECTORIA / 04</div>
+        <img src="logo-principal.jpeg" alt="Emblema Andrómeda 4 flotando en el espacio" />
+        <div class="mission-lines"></div>
+      </div>
+      <div class="mission-copy">
+        <p class="eyebrow"><span>03</span> LA MISIÓN</p>
+        <h2>Diseñamos el futuro<br><em>con las manos.</em></h2>
+        <p>Andrómeda 4 es el resultado de convertir curiosidad en ingeniería, errores en aprendizaje y una visión compartida en una misión real.</p>
+        <div class="spec-grid">
+          <div><span>IDENTIDAD</span><strong>ANDRÓMEDA 4</strong></div>
+          <div><span>OBJETIVO</span><strong>ALCANZAR LO IMPOSIBLE</strong></div>
+          <div><span>ESTADO</span><strong class="turquoise">LISTOS PARA DESPEGAR</strong></div>
+          <div><span>SEÑAL</span><strong class="violet">NUNCA DEJAR DE CRECER</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="quote-mark">“</div>
+      <blockquote>El límite no está en el cielo.<br><em>Está en decidir no despegar.</em></blockquote>
+      <p>— ANDRÓMEDA 4 / MANIFIESTO DE MISIÓN</p>
+    </section>
+
+    <footer>
+      <img src="logo-horizontal.jpeg" alt="Andrómeda 4" />
+      <div><span>PROYECTO FINAL · 2026</span><span>HECHO PARA LLEGAR MÁS LEJOS</span></div>
+      <a href="#inicio" aria-label="Volver al inicio">↑</a>
+    </footer>
+  </main>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
